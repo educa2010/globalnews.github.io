@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Global News</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="menu-btn" id="menuBtn">☰</div>
+  <div class="logo">🌍 Global News</div>
+</header>
+
+<nav class="sidebar" id="sidebar">
+  <h3>Menu</h3>
+  <a href="#" onclick="mostrarNoticias('todas')">Todas</a>
+  <a href="#" onclick="mostrarNoticias('politica')">Política</a>
+  <a href="#" onclick="mostrarNoticias('tecnologia')">Tecnologia</a>
+  <a href="#" onclick="mostrarNoticias('economia')">Economia</a>
+  <a href="#" onclick="mostrarNoticias('esportes')">Esportes</a>
+  <a href="#" onclick="abrirCadastro()">📲 Cadastro WhatsApp</a>
+</nav>
+
+<main>
+
+<section class="news-grid" id="news">
+  <div class="card politica">
+    <img src="https://images.unsplash.com/photo-1555848962-6e79363ec58f">
+    <h2>Cenário político gera debates internacionais</h2>
+    <p>Discussões diplomáticas movimentam líderes globais.</p>
+    <button onclick="abrirNoticia(1)">Ler matéria</button>
+  </div>
+
+  <div class="card tecnologia">
+    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+    <h2>IA acelera mudanças no mercado</h2>
+    <p>Automação e novas profissões ganham força.</p>
+    <button onclick="abrirNoticia(2)">Ler matéria</button>
+  </div>
+
+  <div class="card economia">
+    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a">
+    <h2>Mercados reagem a indicadores</h2>
+    <p>Bolsas sobem após dados positivos.</p>
+    <button onclick="abrirNoticia(3)">Ler matéria</button>
+  </div>
+
+  <div class="card esportes">
+    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b">
+    <h2>Evento esportivo internacional</h2>
+    <p>Competição movimenta milhões.</p>
+    <button onclick="abrirNoticia(4)">Ler matéria</button>
+  </div>
+</section>
+
+<section class="materia" id="materia">
+  <h1 id="titulo"></h1>
+  <p id="texto"></p>
+  <button onclick="fecharMateria()">Voltar</button>
+</section>
+
+<section class="subscribe" id="cadastro">
+  <h3>Receba notícias no WhatsApp</h3>
+  <input id="nome" placeholder="Seu nome">
+  <input id="tel" placeholder="Seu WhatsApp">
+  <button onclick="enviar()">Cadastrar</button>
+</section>
+
+</main>
+
+</body>
+</html>
